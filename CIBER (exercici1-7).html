@@ -1,0 +1,65 @@
+<script>
+
+/* Exercici 1
+L'exercici consisteix a crear un fitxer anomenat ciber.html 
+i mostrar per consola un 'Hola mundo'*/
+console.log("Hola Mundo!");
+
+//Exercici 2
+//Crea un alert que mostri el teu nom:
+alert("Me llamo Zoe");
+
+//Exercici 3
+//Crea variable que contingui el teu nom i un altre el teu cognom.
+
+var name = "Zoe";
+var surname = "Barbara";
+console.log(name+surname);
+
+//Exercici 4
+//Crea dos variables amb dos números i fes una suma entre ells.
+var num1 = 40;
+var num2 = 20;
+
+console.log("La suma entre " + num1 + " y " + num2 + " es "+num1+num2);
+
+/* Exercici 5
+Crea una variable nota_examen juntament amb un alert que ens digui 
+si l’examen ha estat aprovat o no juntament amb la nota.*/
+
+var nota = 7;
+
+if (nota >= 5){
+    console.log("L'examen amb nota: "+nota+" està aprobat");
+}else{
+    console.log("L'examen amb nota: "+nota+" està suspès");
+
+}
+
+/* Exercici 6
+Reemplaça la paraula blau per la paraula verd a la següent cadena 
+de text Tinc un cotxe de color blau. 
+*/
+
+var phrase= "Tinc un cotxe de color blau";
+var phrase2=phrase.replace("blau","verd");
+console.log(phrase2);
+
+/*Excercici 6-B Després intenta fer-ho remplaçant l
+es o per les u*/
+var phrase= "Tinc un cotxe de cOlor blau";
+var phrase2=phrase.replace(/o/gi,"u");
+console.log(phrase2);
+
+/* Exercici 7
+Donat el llistat d’objectes ‘taula’, ‘cadira’, ‘ordinador’, ‘libreta’, 
+per un bucle que mostri per pantalla cada objecte i la seva posició al llistat. 
+*/
+
+var llistat= ["taula", "cadira", "ordinador", "libreta"];
+
+for (i=1; i<llistat.length; i++){
+    console.log("El item número "+i+" es: "+llistat[i]);
+}
+
+</script>
